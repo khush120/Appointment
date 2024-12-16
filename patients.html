@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Appointment Management</h1>
+        <nav>
+            <ul>
+                <li><a href="./patients.html">patient</a></li>
+
+            </ul>
+        </nav>
+    <section id="patients">
+        <h2> Patients</h2>
+        <form id="addPatientForm">
+            <input type="text" id="patientName" placeholder="Patient Name" required />
+            <input type="number" id="patientAge" placeholder="Age" required />
+            <input type="tel" id="patientContact" placeholder="Contact Number" required />
+            <label>Male <input type="radio" name="gender" value="Male" required /></label>
+            <label>Female <input type="radio" name="gender" value="Female" required /></label>
+            <button type="submit">Add Patient</button>
+        </form>
+        <ul id="patientList"></ul>
+    </section>
+    <script src="patients.js"></script>
+</body>
+</html>

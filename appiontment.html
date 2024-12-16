@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Appointment Management</h1>
+        <nav>
+            <ul>
+                <li><a href="./patients.html">Patients</a></li>
+               
+
+            </ul>
+        </nav>
+
+       
+
+
+        <form id="addAppointmentForm">
+            <h2>Book Appointment</h2>
+
+            <div>
+                <label for="appointmentPatient">Patient Name:</label>
+                <input type="text" id="appointmentPatient" placeholder="Enter patient name" required />
+            </div>
+
+            <div>
+                <label for="appointmentDoctor">Select Doctor:</label>
+                <select id="appointmentDoctor" required>
+                    <option value="1">Dr. Suraj - Cardio</option>
+                    <option value="2">Dr. Jyoti - Kidney</option>
+                    <option value="3">Dr. Ankit - ORT</option>
+                    <option value="4">Dr. Afreen - DER</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="date" id="appointmentDate" required />
+            </div>
+
+            <div>
+                <label for="appointmentTime">Appointment Time:</label>
+                <input type="time" id="appointmentTime" required />
+            </div>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <h2></h2>
+        <ul id="appointmentList"></ul>
+    
+<button id="clearAllButton">Clear All Data</button>
+
+
+        <h2>Appointment List</h2>
+        <ul id="appointmentList"></ul>
+
+
+        <div id="appointmentMessage"></div>
+    </div>
+
+    <script src="appointment.js"></script>
+</body>
+</html>
